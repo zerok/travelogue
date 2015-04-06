@@ -1,0 +1,33 @@
+$blue: #1077d7;
+
+.sidebar {
+    background-color: $blue;
+
+    h2 {
+        color: white;
+    }
+
+    .journeys {
+        margin-bottom: 1rem;
+    }
+}
+
+.sidebar-about h1 {
+    font-family: "Ubuntu", sans serif;
+    font-size: 2.75rem;
+}
+
+#credits {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    img {
+        margin: 0;
+    }
+}
+
+.post {
+    dt, dd {
+        display: inline-block;
+        margin: 0 1rem 0 0;
+    }
+}

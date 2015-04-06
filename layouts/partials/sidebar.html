@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1><a href="/">{{ .Site.Title }}</a></h1>
+      <p class="lead">
+        Welcome to the travel blog of <a href="http://h10n.me">Horst Gutmann</a>.
+        Here (try to) keep record of the things I do while traveling the world!
+      </p>
+    </div>
+
+    {{ $journeys := where .Site.Pages "Section" "journey" }}
+
+    {{ if $journeys }}
+    <section class="journeys">
+        <h2>Journeys</h2>
+        <ul>
+            {{ range $journeys }}
+            {{ $slug := .Title | urlize }}
+            <li><a href="{{.Permalink}}">{{.Title}} ({{ index .Site.Taxonomies.journeys $slug | len }})</a></li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+
+    <p id="credits"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+  </div>
+</div>

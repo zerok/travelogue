@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+{{ $slug := .Title | urlize }}
+<body>
+
+{{ partial "sidebar.html" . }}
+
+<div class="content container">
+<div class="post">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ range index $.Site.Taxonomies.journeys $slug }}
+  <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+  {{ end }}
+</div>
+</div>
+
+  </body>
+</html>
