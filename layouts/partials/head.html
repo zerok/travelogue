@@ -13,12 +13,13 @@
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
   {{ end }}
 
+  {{ $cssManifest := getJson "static/css/rev-manifest.json" }}
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/poole.css">
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/syntax.css">
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/hyde.css">
+  <link rel="stylesheet" href="{{ .Site.BaseUrl }}css/poole.css">
+  <link rel="stylesheet" href="{{ .Site.BaseUrl }}css/syntax.css">
+  <link rel="stylesheet" href="{{ .Site.BaseUrl }}css/hyde.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface|Ubuntu">
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseUrl }}css/{{ index $cssManifest "style.css"}}">
 
   <!-- RSS -->
   <link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
