@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
 {{ $slug := .Title | urlize }}
+{{ $posts := index $.Site.Taxonomies.journeys $slug }}
 <body>
 
 {{ partial "sidebar.html" . }}
@@ -8,9 +9,15 @@
 <div class="post">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-
-  {{ range index $.Site.Taxonomies.journeys $slug }}
-  <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+  {{ if $posts }}
+  <section>
+      <h2>Posts</h2>
+      <ul>
+      {{ range $posts }}
+      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> <span class="post-date">{{ .Page.Date.Format "2 January 2006" }}</span></li>
+      {{ end }}
+      </ul>
+  </section>
   {{ end }}
 </div>
 </div>

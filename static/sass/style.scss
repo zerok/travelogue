@@ -26,8 +26,27 @@ $blue: #1077d7;
 }
 
 .post {
+    .data {
+        dl:last-child {
+            margin-bottom: 1rem;
+        }
+    }
     dt, dd {
         display: inline-block;
         margin: 0 1rem 0 0;
+    }
+
+    dl {
+        margin-bottom: 5px;
+    }
+
+    dt {
+        min-width: 4rem;
+    }
+
+    .rating {
+        b {
+            font-size: 3rem;
+        }
     }
 }

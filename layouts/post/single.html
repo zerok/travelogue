@@ -7,10 +7,18 @@
 <div class="post">
   <h1>{{ .Title }}</h1>
   <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+  <div class="data">
   {{ if .Params.journeys }}
     <dl class="journey"><dt>Journey:</dt><dd>{{ range .Params.journeys }}<a href="/journey/{{ . | urlize }}">{{ . }}</a>{{ end }}</dd></dl>
   {{ end }}
+  {{ if .Params.website }}
+    <dl class="website"><dt>Website:</dt><dd><a href="{{ .Params.website }}" rel="external">{{ .Params.website }}</a></dd></dl>
+  {{ end }}
+  </div>
   {{ .Content }}
+  {{ if .Params.score }}
+    <p class="rating"><b>{{ .Params.score }}</b>/5</p>
+  {{ end }}
   {{ partial "disqus.html" }}
 </div>
 </div>
