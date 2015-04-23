@@ -50,3 +50,24 @@ $blue: #1077d7;
         }
     }
 }
+
+figure {
+    display: inline-block;
+    border: 1px solid #EFEFEF;
+    margin: 20px auto;
+
+    img {
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    figcaption {
+        background: #EFEFEF;
+        text-align: center;
+        font-size: 0.8rem;
+
+        p {
+            margin: 0;
+        }
+    }
+}
