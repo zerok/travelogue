@@ -1,4 +1,4 @@
-baseurl = "http://travelogue.h10n.me"
+baseurl = "http://travelogue.h10n.me/"
 languageCode = "en-us"
 title = "Travelogue"
 theme = "hyde"
