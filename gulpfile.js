@@ -10,7 +10,7 @@ Gulp.task('sass', function() {
         .pipe(Rev())
         .pipe(Gulp.dest('static/css'))
         .pipe(Rev.manifest())
-        .pipe(Gulp.dest('static/css'));
+        .pipe(Gulp.dest('data'));
 });
 
 Gulp.task('watch', function() {

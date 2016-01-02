@@ -1,20 +1,104 @@
 $blue: #1077d7;
+$red: #ff2c76;
+$green: #4cd901;
+$basecolor: #666;
 
-.sidebar {
-    background-color: $blue;
+$basefont: "Open Sans", sans-serif;
 
-    h2 {
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $basefont;
+    color: $basecolor;
+}
+
+#page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+header, aside {
+    padding: 1rem;
+    float: left;
+    width: 30%;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    color: white;
+    a, h2 {
         color: white;
-    }
-
-    .journeys {
-        margin-bottom: 1rem;
     }
 }
 
-.sidebar-about h1 {
-    font-family: "Ubuntu", sans serif;
-    font-size: 2.75rem;
+a {
+    color: $blue;
+}
+
+.more {
+    display: block;
+    text-align: right;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: $blue;
+    line-height: 3.2rem;
+}
+
+.post-title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0;
+}
+
+header {
+    margin-top: 7rem;
+    background: $red;
+    border-bottom: 2px solid white;
+
+    h1 {
+        text-align: center;
+        font-size: 3.0rem;
+        margin-top: 1.0rem;
+    }
+}
+
+aside {
+    background: lighten($red, 0);
+    padding: 0;
+
+    > section, > p {
+        padding: 1rem;
+    }
+
+    > p {
+        border-bottom: 2rem solid lighten($red, 20);
+        margin-bottom: 0;
+    }
+
+    border-bottom: 2rem solid lighten($red, 25);
+}
+
+.content {
+    float: right;
+    width: 65%;
+}
+
+h1, h2, h3 {
+    color: $blue;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 #credits {
@@ -25,10 +109,22 @@ $blue: #1077d7;
     }
 }
 
+.posts {
+    .post {
+        margin-bottom: 3rem;
+    }
+}
+
 .post {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     .data {
-        dl:last-child {
-            margin-bottom: 1rem;
+        background: #EFEFEF;
+        padding: 5px 10px;
+        border: 1px dashed #CCC;
+        dl {
+            margin: 0;
+            font-size: 1.4rem;
         }
     }
     dt, dd {
@@ -36,12 +132,9 @@ $blue: #1077d7;
         margin: 0 1rem 0 0;
     }
 
-    dl {
-        margin-bottom: 5px;
-    }
-
     dt {
         min-width: 4rem;
+        font-weight: bold;
     }
 
     .rating {
@@ -49,6 +142,16 @@ $blue: #1077d7;
             font-size: 3rem;
         }
     }
+
+    h2 {
+        margin: 3rem 0 0.5rem 0;
+    }
+}
+
+.post-date {
+    font-style: italic;
+    font-size: 1.4rem;
+    display: block;
 }
 
 figure {
@@ -59,6 +162,7 @@ figure {
     img {
         margin: 0 auto;
         border-radius: 0;
+        max-width: 100%;
     }
 
     figcaption {
@@ -69,5 +173,24 @@ figure {
         p {
             margin: 0;
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #page {
+        max-width: 100%;
+        padding: 0;
+    }
+    .content {
+        padding: 1rem;
+    }
+    header, aside, .content {
+        float: none;
+        width: 100%;
+        margin-top: 0;
     }
 }
