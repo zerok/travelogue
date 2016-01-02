@@ -18,6 +18,14 @@ body {
     color: $basecolor;
 }
 
+.info {
+    text-align: center;
+    font-size: 1.4rem;
+    background: #EFEFEF;
+    padding: 5px 10px;
+    border: 1px dashed #CCC;
+}
+
 #page {
     max-width: 1000px;
     margin: auto;
