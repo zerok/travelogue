@@ -1,6 +1,6 @@
 +++
 date = "2015-04-26T13:04:15+02:00"
-journeys = ["PyCon 2015"]
+journeys = ["pycon-2015"]
 title = "Habitat 67"
 visited = ["2015-04-16"]
 +++

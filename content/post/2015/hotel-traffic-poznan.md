@@ -1,6 +1,6 @@
 +++
 date = "2015-07-23T20:01:48+02:00"
-journeys = ["PolyConf 2015"]
+journeys = ["polyconf-2015"]
 title = "Hotel Traffic in Poznan"
 +++
 

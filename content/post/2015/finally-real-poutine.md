@@ -1,6 +1,6 @@
 +++
 date = "2015-04-15T10:13:56-04:00"
-journeys = ["PyCon 2015"]
+journeys = ["pycon-2015"]
 title = "Finally real Poutine"
 score = 3.5
 location = "1348 Beaubien Est, Montréal, QC H2G 1K8, Canada"

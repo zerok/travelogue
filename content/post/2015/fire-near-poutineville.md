@@ -1,6 +1,6 @@
 +++
 date = "2015-04-12T06:57:54-04:00"
-journeys = ["PyCon 2015"]
+journeys = ["pycon-2015"]
 title = "Fire near Poutineville"
 +++
 

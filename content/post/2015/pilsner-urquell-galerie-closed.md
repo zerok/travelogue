@@ -1,6 +1,6 @@
 +++
 date = "2015-09-02T18:32:07+02:00"
-journeys = ["WriteTheDocs EU 2015"]
+journeys = ["writethedocs-eu-2015"]
 title = "Pilsner Urquell Galerie closed"
 +++
 

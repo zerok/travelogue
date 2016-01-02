@@ -1,6 +1,6 @@
 +++
 date = "2015-05-23T09:53:59+02:00"
-journeys = ["JSConf Budapest 2015"]
+journeys = ["jsconfbp-2015"]
 title = "Dining in Budapest"
 +++
 

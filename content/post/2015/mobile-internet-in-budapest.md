@@ -1,6 +1,6 @@
 +++
 date = "2015-05-17T18:24:10+02:00"
-journeys = ["JSConf Budapest 2015"]
+journeys = ["jsconfbp-2015"]
 title = "Mobile Internet in Budapest"
 visited = "2015-05-14"
 +++

@@ -1,7 +1,7 @@
 +++
 date = "2015-06-14T09:44:00+02:00"
 title = "Travelling to Cardiff"
-journeys = ["DjangoCon Europe 2015"]
+journeys = ["djangocon-europe-2015"]
 +++
 
 <figure>

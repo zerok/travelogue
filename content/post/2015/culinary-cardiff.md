@@ -1,6 +1,6 @@
 +++
 date = "2015-07-10T20:50:02+02:00"
-journeys = ["DjangoCon Europe 2015"]
+journeys = ["djangocon-europe-2015"]
 title = "Culinary Cardiff"
 +++
 

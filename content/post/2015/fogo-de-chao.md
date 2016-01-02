@@ -1,6 +1,6 @@
 +++
 date = "2015-04-21T10:57:30-05:00"
-journeys = ["PyCon 2015"]
+journeys = ["pycon-2015"]
 title = "Fogo de Chão"
 score = 4
 website = "http://www.fogodechao.com/"

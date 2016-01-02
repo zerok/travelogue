@@ -2,7 +2,7 @@
 Categories = []
 Tags = []
 date = "2015-04-10T09:30:52-04:00"
-journeys = ["PyCon 2015"]
+journeys = ["pycon-2015"]
 title = "Back in Montréal"
 +++
 

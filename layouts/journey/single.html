@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-{{ $slug := .Title | urlize }}
+{{ $slug := .Slug }}
 {{ $posts := index $.Site.Taxonomies.journeys $slug }}
 <div class="content container">
 <div class="post">

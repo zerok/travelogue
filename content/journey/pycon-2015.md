@@ -1,6 +1,7 @@
 +++
 date = "2015-04-08T06:00:00+02:00"
 title = "PyCon 2015"
+slug = "pycon-2015"
 +++
 
 This is now my second [PyCon][] and once again it takes place in Montréal,

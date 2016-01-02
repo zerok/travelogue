@@ -5,8 +5,10 @@
         <h2>Journeys</h2>
         <ul>
             {{ range $journeys }}
-            {{ $slug := .Title | urlize }}
-            <li><a href="{{.Permalink}}">{{.Title}} ({{ index .Site.Taxonomies.journeys $slug | len }})</a></li>
+            {{ $numposts := index .Site.Taxonomies.journeys .Slug | len}}
+            {{ if gt $numposts 0 }}
+            <li><a href="{{.Permalink}}">{{.Title}} ({{ $numposts }})</a></li>
+            {{ end }}
             {{ end }}
         </ul>
     </section>

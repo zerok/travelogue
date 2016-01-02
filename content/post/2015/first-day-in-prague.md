@@ -1,6 +1,6 @@
 +++
 date = "2015-08-31T18:29:29+02:00"
-journeys = ["WriteTheDocs EU 2015"]
+journeys = ["writethedocs-eu-2015"]
 title = "First day in Prague"
 +++
 
