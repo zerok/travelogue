@@ -1,8 +1,8 @@
-baseurl = "http://travelogue.h10n.me/"
+baseurl = "https://travelogue.h10n.me/"
 languageCode = "en-us"
 title = "Travelogue"
 theme = "hyde"
-
+MetaDataFormat = "yaml"
 
 [taxonomies]
     journey = "journeys"
