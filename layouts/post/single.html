@@ -3,6 +3,13 @@
 <div class="content container">
 <div class="post">
   <h1>{{ .Title }}</h1>
+  {{ if in .Params.tags "session-notes"}}
+
+    <p class="content-info">These are raw session notes taken during the
+    conference combined with some comments and additions from my part. For
+    further details about this talk please refer to the event's website.</p>
+
+  {{ end }}
   <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
   {{ $journeys := $.Site.Data.journeys }}
   {{ if or .Params.journeys .Params.website }}
@@ -15,6 +22,10 @@
     {{ end }}
     {{ if .Params.website }}
         <dl class="website"><dt>Website:</dt><dd><a href="{{ .Params.website }}" rel="external">{{ .Params.website }}</a></dd></dl>
+    {{ end }}
+    {{ if .Params.speaker }}
+        <dl class="speaker"><dt>Speaker:</dt><dd><a href="{{.Params.speaker.website}}">{{ .Params.speaker.name }}</a>{{ if .Params.speaker.bio }} ({{ .Params.speaker.bio | markdownify }}){{ end }}
+        </dd></dl>
     {{ end }}
     </div>
   {{ end }}

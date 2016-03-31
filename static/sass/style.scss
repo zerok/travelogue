@@ -26,6 +26,14 @@ body {
     border: 1px dashed #CCC;
 }
 
+.content-info {
+    text-align: left;
+    font-size: 1.4rem;
+    background: #EFEFEF;
+    padding: 5px 10px;
+    border: 1px dashed $blue;
+}
+
 #page {
     max-width: 1000px;
     margin: auto;
