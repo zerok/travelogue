@@ -5,10 +5,10 @@ title: "Django and ReactJS: The good, the bad and the ugly by Tomáš Ehrlich"
 website: https://2016.djangocon.eu/speakers/12
 tags:
   - session-notes
-speaker:
-  name: Tomáš Ehrlich
-  website: http://www.tomasehrlich.cz/
-  bio: Full-stack developer and co-organizer of PyCon CZ 2015.
+speakers:
+  - name: Tomáš Ehrlich
+    website: http://www.tomasehrlich.cz/
+    bio: Full-stack developer and co-organizer of PyCon CZ 2015.
 ---
 
 - Full-time django developer, then full-time JavaScript developer and now tries

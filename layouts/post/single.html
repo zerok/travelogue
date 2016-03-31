@@ -5,9 +5,10 @@
   <h1>{{ .Title }}</h1>
   {{ if in .Params.tags "session-notes"}}
 
-    <p class="content-info">These are raw session notes taken during the
-    conference combined with some comments and additions from my part. For
-    further details about this talk please refer to the event's website.</p>
+    <p class="content-info">These are raw (but highly subjective and probably
+    incomplete) session notes taken during the conference combined with some
+    comments and additions on my part. For further details about this talk
+    please refer to the event's website.</p>
 
   {{ end }}
   <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
@@ -23,9 +24,11 @@
     {{ if .Params.website }}
         <dl class="website"><dt>Website:</dt><dd><a href="{{ .Params.website }}" rel="external">{{ .Params.website }}</a></dd></dl>
     {{ end }}
-    {{ if .Params.speaker }}
-        <dl class="speaker"><dt>Speaker:</dt><dd><a href="{{.Params.speaker.website}}">{{ .Params.speaker.name }}</a>{{ if .Params.speaker.bio }} ({{ .Params.speaker.bio | markdownify }}){{ end }}
+    {{ if .Params.speakers }}
+        {{ range .Params.speakers }}
+        <dl class="speaker"><dt>Speaker:</dt><dd><a href="{{.website}}">{{ .name }}</a>{{ if .bio }} ({{ .bio | markdownify }}){{ end }}
         </dd></dl>
+        {{ end }}
     {{ end }}
     </div>
   {{ end }}

@@ -5,15 +5,13 @@ journeys:
 title: "How to Upgrade to the Newest and Shiniest Django by Susan Tan"
 tags:
   - session-notes
+website: https://2016.djangocon.eu/speakers/24
+speakers:
+  - name: Susan Tan
+    website: https://twitter.com/ArcTanSusan
+    bio: |
+      works at Cisco and was a core committer at [openhatch.org](https://openhatch.org)
 ---
-
-[Susan Tan][] works at Cisco and was a core committer at
-[openhatch.org][openhatch].
-
-[susan tan]: https://twitter.com/ArcTanSusan
-[openhatch]: https://openhatch.org/
-
-<!--more-->
 
 - Why shoud you upgrade? Because you get new features and fixes and it makes it
   easier to always stay up to date for future updates.
