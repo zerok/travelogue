@@ -174,11 +174,13 @@ figure {
     display: inline-block;
     border: 1px solid #EFEFEF;
     margin: 20px auto;
+    max-width: 100%;
 
     img {
         margin: 0 auto;
         border-radius: 0;
         max-width: 100%;
+        display: block;
     }
 
     figcaption {
