@@ -3,7 +3,7 @@ $red: #ff2c76;
 $green: #4cd901;
 $basecolor: #666;
 
-$basefont: "Open Sans", sans-serif;
+$basefont: "Roboto", sans-serif;
 
 * {
     box-sizing: border-box !important;
@@ -129,11 +129,16 @@ h1, h2, h3 {
     .post {
         margin-bottom: 3rem;
     }
+
+    .post-date {
+        margin-bottom: 1rem;
+    }
 }
 
 .post {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
+
     .data {
         background: #EFEFEF;
         padding: 5px 10px;
