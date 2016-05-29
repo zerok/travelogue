@@ -1,7 +1,7 @@
 +++
 title = "CraftConf 2016"
 date = "2016-04-28T15:00:00+02:00"
-slug = "craftconf2016"
+slug = "craftconf-2016"
 +++
 
 Only a couple of weeks after DjangoCon Europe I returned to Budapest for my very
